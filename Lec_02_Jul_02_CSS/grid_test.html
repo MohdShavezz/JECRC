@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        .row {
+            display: grid;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .row1 {
+            grid-template-columns: 1fr;
+        }
+
+        .row2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .row3 {
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .row4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .row div {
+            background: teal;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row row2">
+        <div>1</div>
+        <div>2</div>
+    </div>
+
+    <div class="row row3">
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <div class="row row4">
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <div class="row row1">
+        <div>10</div>
+    </div>
+
+</body>
+
+</html>
