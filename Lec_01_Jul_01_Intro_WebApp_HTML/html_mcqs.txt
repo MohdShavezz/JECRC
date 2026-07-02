@@ -1,0 +1,119 @@
+1. What does HTML stand for?
+A) Hyper Text Markup Language
+B) Hyper Transfer Markup Language
+C) High Text Machine Language
+D) Hyper Tool Multi Language
+
+2. Which HTML tag is used to create the largest heading?
+A) <heading>
+B) <h6>
+C) <h1>
+D) <head>
+
+3. Which tag is used to insert a paragraph?
+A) <para>
+B) <p>
+C) <text>
+D) <paragraph>
+
+4. Which HTML tag is used to create a hyperlink?
+A) <link>
+B) <a>
+C) <href>
+D) <url>
+
+5. Which attribute specifies the destination of a hyperlink?
+A) src
+B) href
+C) link
+D) action
+
+6. Which tag is used to display an image?
+A) <picture>
+B) <image>
+C) <img>
+D) <src>
+
+7. Which attribute specifies alternative text for an image?
+A) title
+B) alt
+C) name
+D) value
+
+8. Which HTML element is used to create a line break?
+A) <break>
+B) <lb>
+C) <br>
+D) <newline>
+
+9. Which HTML tag creates an unordered list?
+A) <ol>
+B) <ul>
+C) <li>
+D) <list>
+
+10. Which HTML tag defines a table row?
+A) <td>
+B) <th>
+C) <tr>
+D) <table>
+
+11. Which HTML5 tag represents the main content of a webpage?
+A) <content>
+B) <section>
+C) <main>
+D) <body>
+
+12. use of target="_blank" in <a/> tag?
+A) open location in current page
+B) empty the input field
+C) open location in new html page
+D) all of above
+
+13. Which input type hides the entered characters?
+A) text
+B) email
+C) hidden
+D) password
+
+14. Which HTML element is used to collect user input?
+A) <form>
+B) <input>
+C) <textarea>
+D) All of the above
+
+15. Which HTML tag is used to embed another webpage?
+A) <embed>
+B) <iframe>
+C) <object>
+D) <window>
+
+16. Which HTML5 tag is used to play audio?
+A) <music>
+B) <sound>
+C) <audio>
+D) <mp3>
+
+17. Which HTML5 tag is used to display a video?
+A) <media>
+B) <movie>
+C) <video>
+D) <play>
+
+18. Which declaration tells the browser that the document uses HTML5?
+A) <html5>
+B) <!DOCTYPE html>
+C) <doctype html>
+D) <DOCTYPE HTML5>
+
+19. Which HTML tag contains metadata such as the page title and CSS links?
+A) <body>
+B) <meta>
+C) <head>
+D) <header>
+
+20. Which of the following is NOT a semantic HTML5 element?
+A) <header>
+B) <section>
+C) <article>
+D) <div>
