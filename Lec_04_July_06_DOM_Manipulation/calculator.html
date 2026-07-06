@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter number 1" id="num1">
+    <input type="text" placeholder="enter number 2" id="num2">
+   <br>
+   <!-- <p style="color: green;">Ans: 33</p> -->
+    <div id="ans"></div>
+    <button>click</button>
+
+    <script>
+        let clickBtn=document.querySelector('button')
+        clickBtn.addEventListener('click',()=>{
+            // let num1=document.getElementById('num1').value
+            let num1=Number(document.getElementById('num1').value)
+            let num2=+document.getElementById('num2').value
+            let operator= window.prompt('enter operator.')
+            // console.log(num1,num2,operator)
+            let res
+            if(operator=='+'){
+              res = num1+num2 // "12+2"
+            }else if(operator=='-'){
+                res = num2-num1
+            }else if(operator=='*'){
+                res = num2*num1
+            }else{
+                alert('invalid operator.')
+                return
+            }
+
+            document.getElementById('num1').value=''
+            document.getElementById('num2').value=''
+            
+            document.getElementById('ans').style.color='green'
+            // document.getElementById('ans').innerHTML="Ans: "+res
+            document.getElementById('ans').innerHTML=`Ans : ${res}`
+
+        })
+
+    </script>
+</body>
+</html>

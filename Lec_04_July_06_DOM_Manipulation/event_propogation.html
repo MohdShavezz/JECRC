@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #one{
+            width: 15rem;
+            height: 15rem;
+            background-color: aqua;
+        }
+        #two{
+            width: 10rem;
+            height: 10rem;
+            background-color: rgb(13, 255, 0);
+        }
+        #three{
+            width: 5rem;
+            height: 5rem;
+            background-color: rgb(206, 135, 59);
+        }
+        #one,#two,#three{
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Event Propogation</h1>
+
+    <div>
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <h1>Bubbling & Capturing</h1>
+    <div id="one"> 
+        1
+        <div id="two"> 
+            2
+            <div id="three">
+                3
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <a href="form.html">Form</a>
+    <br><br><br><br>
+
+
+    <script>
+
+        // <h1>Bubbling & Capturing</h1>
+
+        // default bubbling 
+        // document.getElementById('one').addEventListener('click',()=>{
+        //     console.log('one')
+        // })
+        // document.getElementById('two').addEventListener('click',()=>{
+        //     console.log('two')
+        // })
+        // document.getElementById('three').addEventListener('click',()=>{
+        //     console.log('three')
+        // })
+        
+        //capturing
+        document.getElementById('one').addEventListener('click',(e)=>{
+            // e.stopPropagation()            
+            console.log('one')
+        },true)
+        document.getElementById('two').addEventListener('click',()=>{
+            console.log('two')
+        },true)
+        document.getElementById('three').addEventListener('click',()=>{
+            console.log('three')
+        },true)
+        
+
+        let ul = document.querySelector('ul')
+        ul.addEventListener('click', (e) => {
+            // console.log(e.target.nodeName)
+            if (e.target.nodeName == 'LI') {
+                console.log(e.target.textContent)
+            }
+        })
+    </script>
+</body>
+
+</html>

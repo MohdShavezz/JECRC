@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>FORM</h1>
+    <!-- <iframe src="sample.pdf" width="50%" height="200px" style="border: none;"></iframe> -->
+
+    <form onsubmit="handleSubmit(event)">
+        Name: <input type="text" id="name" name="name" placeholder="enter name"> <br>
+        Age: <input type="number" id="age" name="age" placeholder="enter age"> <br>
+        Photo: <input type="file" name="photo" id="photo" accept="image/*"> <br>
+        Resume: <input type="file" id="resume"> <br>
+        <button type="submit">click</button>
+    </form>
+    <div id="out">
+        <!-- <p>name</p>
+        <p>age</p>
+        <img src="womanlaptop.webp" alt=""> -->
+    </div>
+
+    <!-- <img src="womanlaptop.webp" height="300" alt=""> -->
+
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault() // prevent page load
+            let name=document.getElementById('name').value
+            let age=document.getElementById('age').value
+            let photo=document.getElementById('photo').files[0]
+            let resume=document.getElementById('resume').files[0]
+
+            let outName=document.createElement('p')
+            let outAge=document.createElement('p')
+            let outPhoto=document.createElement('img')
+            let outResume=document.createElement('iframe')
+
+            let out=document.getElementById('out')
+            outName.innerText=name
+            outAge.innerText=age
+
+            outPhoto.src=URL.createObjectURL(photo)
+            // outPhoto.src="womanlaptop.webp"
+            outPhoto.height="250"
+
+            outResume.src=URL.createObjectURL(resume)
+            outResume.height="200"
+            
+
+            out.appendChild(outPhoto)
+            out.appendChild(outResume)
+            out.appendChild(outName)
+            out.appendChild(outAge)
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1{
+            color: red ;
+        } */
+    </style>
+    <!-- <script>
+        // document.body.style.background='yellow'
+        function fn(){
+            // window.alert('alert')
+            let h1=document.getElementById('dom')
+            // console.log(h1)
+            h1.style.color='red'
+
+        }
+    </script> -->
+    <script src="script.js"></script>
+    <style>
+        .blueKardo{
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- website 2.0 SEC -->
+    <h1 onclick="fn()" id="dom">DOM Manipulation</h1>
+    <p id="para" onclick="clickFn()">this is paragrapth</p>
+
+    <div id="parent">
+        hello there how are you!!!
+        <!-- <p style="color: blue;">its nice to talk!!</p> -->
+    </div>
+    <button>click</button>
+
+    <br>
+    <br>
+    <br>
+    <a href="event_propogation.html">Event Propogation</a>
+
+
+
+    <script>
+        function clickFn(){
+            document.getElementById('para').style.display='none'
+        }
+        // task: create <p> tag with blue color inside </div> on clicking button 
+        let button=document.querySelector('button')
+        button.addEventListener('click',()=>{
+            let p=document.createElement('p')
+            let parent=document.getElementById('parent')
+            p.innerText='its nice to talk!'
+            // p.style.color='blue'
+            p.classList.add('blueKardo') //<p class="blueKardo">asdfasdf </p>
+            // p.classList.add('redKardo')
+            // p.classList.remove('blueKardo')
+            parent.appendChild(p)
+            // parent.remove()
+        })
+
+
+        function fn() {
+            console.log('this is h1 tag')
+            // setTimeout(()=>{
+            //     console.log('setTimeout run...')
+            // },2000)
+            // setInterval(() => {
+            //     console.log('setInterval...')
+            // }, 2000);
+        }
+
+        
+
+        document.querySelector('p').addEventListener('mouseenter', () => {
+            //on click 
+            console.log('mouseenter..')
+        })
+        document.querySelector('p').addEventListener('mouseleave', () => {
+            //on click 
+            console.log('mouseleave..')
+        })
+
+        // window.addEventListener('load', (event) => {
+        //     console.log('The page and all resources have fully loaded.');
+        // });
+    </script>
+
+
+</body>
+
+</html>
