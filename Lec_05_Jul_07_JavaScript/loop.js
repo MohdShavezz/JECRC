@@ -30,3 +30,36 @@ for (let i = 2; i <= num-1; i++) {
     }
 }
 console.log('prime')
+
+// while
+// let n=0
+// while(n<5){
+//     console.log(n) // 5 4 3 2 1
+
+//     //break point condition false
+//     n++  // 4 3 2 1 0
+// }
+// console.log('done')
+
+// do-while : atleast runs once 
+// let n=5
+// do{
+//   console.log(n) // 5 4 3 2 1
+//   n-- // 4 3 2 1 0
+// }while(n>0) 
+
+
+let arr=[1,2,3,4] // loosely type
+// for(let i=0;i<arr.length;i++){
+//   console.log(i,arr[i])
+// }
+
+arr.forEach((ele,ind)=>{
+  console.log(ele*ele)
+})
+
+// arr.map((ele,ind)=>{
+//   console.log(ind,ele)
+// })
+
+
